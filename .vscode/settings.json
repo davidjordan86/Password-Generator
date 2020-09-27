@@ -1,3 +1,15 @@
 {
-    "python.pythonPath": "C:\\Users\\David\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
-}
+    "python.pythonPath": "C:\\Users\\David\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": "meta.function-call.generic.python",
+            "settings": {
+              "foreground": "#FF0000"
+            }
+          }
+        ]
+      },
+    }

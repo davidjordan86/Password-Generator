@@ -13,7 +13,9 @@ def get_base_phrase():
 
 
 def get_first_three_letters(string):
-    print(string[0:3])
+    first_three_letters = string[0:3]
+    return first_three_letters
+
 
 
 def generate_password():
@@ -21,14 +23,22 @@ def generate_password():
 
 
 def main():
+    #get the website name from user
     website = get_website_name()
+    
+    #Check if it is valid and keep looping until they provide a valid name
+    while not website.isalpha() and website.lenth() > 3:
+        website = get_website_name()
+
     phrase = get_base_phrase()
+    password = ""
 
     while not phrase.isalpha():
         phrase = get_base_phrase()
     
-    get_first_three_letters(website)
-    
+    letters = get_first_three_letters(website).capitalize()
+
+    password = letters + "!" + phrase.lower() +
 
     
 
